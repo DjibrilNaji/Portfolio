@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Projet 2ème année | NAJI Djibril</title>
+    <title>Donner son avis | NAJI Djibril</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -67,8 +67,19 @@
     <div class="contactez-nous">
         <h1>Donnez votre avis </h1>
         <p>Dites moi ce que vous pensez de mon Portfolio pour que je puisse l'améliorer... </p>
-        <form action="/page-traitement-donnees" method="post">
+        <form action="pageAvis.php" method="post">
 
+            <div>
+                <label for="name">Votre Nom</label>
+                <textarea id="name" name="name" placeholder="Votre nom"
+                            required style="height: 53px;"></textarea>
+            </div>
+            <div>
+                <label for="email">Votre email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                       required style="height: 53px;"/>
+            </div>
             <div>
                 <label for="message">Votre message</label>
                 <textarea id="message" name="message" placeholder="Bonjour, votre site est intéressant car...."

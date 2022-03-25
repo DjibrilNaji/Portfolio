@@ -14,12 +14,18 @@
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+
+    <!-- AOS animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Libraries CSS Files -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
 
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
@@ -36,7 +42,7 @@
 <!--/ Nav Star /-->
 <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll" href="#page-top">Portfolio</a>
+        <a class="navbar-brand js-scroll" href="#">Portfolio</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
                 aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
@@ -84,12 +90,11 @@
                 <h2 class="intro-title mb-4">Mes stages</h2>
                 <ol class="breadcrumb d-flex justify-content-center">
                     <li class="breadcrumb-item">
-                        <a href="#">Home</a>
+                        <a class="js-scroll" href="#stage1">Stage 1</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="https://djibrilnaji.github.io/Portfolio/#blog">Stages et projets</a>
+                        <a class="js-scroll" href="#stage2">Stage 2</a>
                     </li>
-                    <li class="breadcrumb-item active">Stages</li>
                 </ol>
             </div>
         </div>
@@ -98,13 +103,13 @@
 <!--/ Intro Skew End /-->
 
 <!--/ Section Blog-Single Star /-->
-<section class="blog-wrapper sect-pt4" id="blog">
+<section class="blog-wrapper sect-pt4" id="stage1">
     <div class="container">
         <div class="row">
             <div class="col-md">
                 <div class="post-box">
                     <div class="post-thumb">
-                        <img src="img/API.jpg" class="img-fluid" alt="">
+                        <img src="img/API.jpg" class="img-fluid" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1100" alt="">
                     </div>
                     <div class="post-meta">
                         <h1 class="article-title">Stage passé en première année de BTS SIO </h1>
@@ -208,13 +213,13 @@
     </div>
 </section>
 
-<section class="blog-wrapper sect-pt4" id="blog">
+<section class="blog-wrapper sect-pt4" id="stage2">
     <div class="container">
         <div class="row">
             <div class="col-md">
                 <div class="post-box">
                     <div class="post-thumb">
-                        <img src="img/API.jpg" class="img-fluid" alt="">
+                        <img src="img/test3.jpg" style="align-items: center;" class="img-fluid" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1100" alt="">
                     </div>
                     <div class="post-meta">
                         <h1 class="article-title">Stage passé en deuxième année de BTS SIO </h1>
@@ -309,7 +314,7 @@
                               Licensing information: https://bootstrapmade.com/license/
                               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
                             -->
-                            Designed by Djibril NAJI</a>
+                            Designed by Djibril NAJI
                         </div>
                     </div>
                 </div>
@@ -338,6 +343,9 @@
 
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>

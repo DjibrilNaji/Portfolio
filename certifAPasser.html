@@ -14,6 +14,10 @@
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- AOS animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Libraries CSS Files -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
@@ -36,7 +40,7 @@
 <!--/ Nav Star /-->
 <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll" href="#page-top">Portfolio</a>
+        <a class="navbar-brand js-scroll" href="#">Portfolio</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
                 aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
@@ -84,12 +88,11 @@
                 <h2 class="intro-title mb-4">Mes certifications à passer</h2>
                 <ol class="breadcrumb d-flex justify-content-center">
                     <li class="breadcrumb-item">
-                        <a href="#">Home</a>
+                        <a class="js-scroll" href="#certif1">Certification 1</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="https://djibrilnaji.github.io/Portfolio/#certification">Certification</a>
+                        <a class="js-scroll" href="#certif2">Certification 2</a>
                     </li>
-                    <li class="breadcrumb-item active">Certifications</li>
                 </ol>
             </div>
         </div>
@@ -98,27 +101,27 @@
 <!--/ Intro Skew End /-->
 
 <!--/ Section Blog-Single Star /-->
-<section class="blog-wrapper sect-pt4" id="blog">
+<section class="blog-wrapper sect-pt4" id="certif1">
     <div class="container">
         <div class="row">
             <div class="col-md">
                 <div class="post-box">
-                    <center><h2>JavaScript : la formation ULTIME :</h2>
+                    <div style="text-align: center;"><h2>JavaScript : la formation ULTIME :</h2>
                         <h3>Maîtrisez Javascript grâce au cours le plus complet sur internet !
-                            Projets, exercices, quiz, ES8 et bien d’autres !</h3></center>
-                    </br>
+                            Projets, exercices, quiz, ES8 et bien d’autres !</h3></div>
+                    <br/>
                     <div class="post-thumb">
-                        <p align="center"><img src="imgCertif/JS_udemy.JPG" class="img-fluid" alt=""></p>
+                        <p style="text-align: center;"><img src="imgCertif/JS_udemy.JPG" class="img-fluid" alt=""></p>
                     </div>
                     <div class="article-content">
                         <p>
                         <h6>Je suis actuellement entrain de travailler sur cette certification
                         </h6>
-                        </br>
-                        </br>
+                        <br/>
+                        <br/>
 
                         <h5 style="color: blueviolet;"> Ce que vous apprendrez : </h5>
-                        </br>
+                        <br/>
                         <ul>
                             <li>les requêtes AJAX</li>
                             <li>Comprendre comment utiliser jQuery</li>
@@ -166,25 +169,26 @@
 
 <div class="line-mf"></div>
 
-<section class="blog-wrapper sect-pt4" id="blog">
+<section class="blog-wrapper sect-pt4" id="certif2">
     <div class="container">
         <div class="row">
             <div class="col-md">
                 <div class="post-box">
-                    <center><h2>PHP et MySQL : la formation ULTIME :</h2>
+                    <div style="text-align: center;"><h2>PHP et MySQL : la formation ULTIME :</h2>
                         <h3>Créez des sites modernes avec PHP et SQL,
-                            et concevez vos premiers projets complet dans le meilleur cours sur internet !</h3></center>
-                    </br>
+                            et concevez vos premiers projets complet dans le meilleur cours sur internet !</h3></div>
+                    <br/>
                     <div class="post-thumb">
-                        <p align="center"><img src="imgCertif/PHP_udemy.JPG" class="img-fluid" alt=""></p>
+                        <p style="text-align: center;"><img src="imgCertif/PHP_udemy.JPG" class="img-fluid" alt=""></p>
                     </div>
                     <div class="article-content">
                         <p>
                         <h6>Je suis actuellement entrain de travailler sur cette certification</h6>
-                        </br>
-                        </br>
+                        <br/>
+                        <br/>
+
                         <h5 style="color: blueviolet;">À qui ce cours s'adresse-t-il ?</h5>
-                        </br>
+                        <br/>
                         <ul>
                             <li>Les étudiants en école d'informatique</li>
                             <li>Ceux qui veulent développer leurs carrières</li>
@@ -192,7 +196,7 @@
                             <li>Les débutants / intermédiaires / professionnels</li>
                         </ul>
                         <h5 style="color: blueviolet;">Ce que vous apprendrez :</h5>
-                        </br>
+                        <br/>
                         <ul>
                             <li>Vous apprendrez à utiliser toutes les nouveautés de PHP</li>
                             <li>Vous apprendrez à utiliser des bases de données</li>
@@ -244,7 +248,7 @@
                               Licensing information: https://bootstrapmade.com/license/
                               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
                             -->
-                            Designed by Djibril NAJI</a>
+                            Designed by Djibril NAJI
                         </div>
                     </div>
                 </div>
@@ -273,6 +277,8 @@
 
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
-
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

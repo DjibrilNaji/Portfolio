@@ -100,7 +100,7 @@ a:hover {
 .overlay-mf {
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     padding: 0;
     height: 100%;
     width: 100%;
@@ -285,7 +285,7 @@ a:hover {
     height: 7px;
     margin: 5px 5px;
     background: #cde1f8;
-    border: 0px solid #cde1f8;
+    border: 0 solid #cde1f8;
     display: block;
     transition: all 0.6s ease-in-out;
     cursor: pointer;
@@ -413,7 +413,7 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce {
-    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.06);
 }
 
 .navbar-b.navbar-trans .nav-item,
@@ -434,8 +434,8 @@ a:hover {
 .navbar-b.navbar-reduce .nav-link:before {
     content: '';
     position: absolute;
-    margin-left: 0px;
-    width: 0%;
+    margin-left: 0;
+    width: 0;
     bottom: 0;
     left: 0;
     height: 2px;
@@ -620,7 +620,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
-    left: 0px;
+    left: 0;
     padding: 0;
     height: 100%;
     width: 100%;
@@ -1192,7 +1192,7 @@ footer .credits a {
 @media (min-width: 767px) {
     .about-mf .box-pl2 {
         margin-top: 3rem;
-        padding-left: 0rem;
+        padding-left: 0;
     }
 
     .card-blog {
@@ -1201,7 +1201,7 @@ footer .credits a {
 
     .contact-mf .box-pl2 {
         margin-top: 3rem;
-        padding-left: 0rem;
+        padding-left: 0;
     }
 }
 

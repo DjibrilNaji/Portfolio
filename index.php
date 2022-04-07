@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Portfolio | NAJI Djibril</title>
+    <!--    <title>Portfolio | NAJI Djibril</title>-->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -28,6 +28,11 @@
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
 
+    <?php
+    $page_name = "Portfolio | NAJI Djibril";
+    ?>
+    <title><?php echo $page_name; ?></title>
+
     <!-- =======================================================
       Theme Name: DevFolio
       Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
@@ -37,6 +42,7 @@
 </head>
 
 <body id="page-top">
+
 
 <!--/ Nav Star /-->
 <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
@@ -84,9 +90,11 @@
         <div class="table-cell">
             <div class="container">
                 <!--<p class="display-6 color-d">Hello, world!</p>-->
-                <h1 class="intro-title mb-4" data-aos="fade-down" data-aos-delay="400" data-aos-duration="500">Djibril NAJI</h1>
-                <p class="intro-subtitle" data-aos="fade-down" data-aos-delay="400" data-aos-duration="500"><span class="text-slider-items">Étudiant,BTS SIO option SLAM</span><strong
-                        class="text-slider"></strong></p>
+                <h1 class="intro-title mb-4" data-aos="fade-down" data-aos-delay="400" data-aos-duration="500">Djibril
+                    NAJI</h1>
+                <p class="intro-subtitle" data-aos="fade-down" data-aos-delay="400" data-aos-duration="500"><span
+                            class="text-slider-items">Étudiant,BTS SIO option SLAM</span><strong
+                            class="text-slider"></strong></p>
                 <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
             </div>
         </div>
@@ -94,8 +102,31 @@
 </div>
 <!--/ Intro Skew End /-->
 
+
 <section id="about" class="about-mf sect-pt4 route">
-    <div class="container" data-aos="fade-down" data-aos-delay="200" data-aos-duration="400">
+    <?php
+    include "compteurVisite.php";
+    $nombre_visiteurs = visiteur($page_name);
+    ?>
+    <footer>
+        <h5>
+            <?php
+            echo "vous êtes le visteur n°", $nombre_visiteurs, " sur ce site !";
+            ?>
+            <!--            --><?php
+            //            echo $_SERVER['SERVER_NAME'];
+            //            ?>
+            <!---->
+            <!--            --><?php
+            //
+            //            echo $_SERVER["REMOTE_ADDR"];
+            //
+            //            ?>
+        </h5>
+
+    </footer>
+<!--    data-aos="fade-down" data-aos-delay="200" data-aos-duration="400"-->
+    <div class="container" >
         <div class="row">
             <div class="col-sm-12">
                 <div class="box-shadow-full">
@@ -111,7 +142,8 @@
                                     <div class="about-info">
                                         <p><span class="title-s">Nom : </span> <span>Djibril Naji</span></p>
                                         <p><span class="title-s">Profil : </span> <span>Etudiant</span></p>
-                                        <p><span class="title-s">Email : </span> <span>najidjibril@gmail.com</span></p>
+                                        <p><span class="title-s">Email : </span> <span>najidjibril@gmail.com</span>
+                                        </p>
                                         <p><span class="title-s">Téléphone : </span> <span>07.70.41.37.85</span></p>
                                     </div>
                                 </div>
@@ -120,31 +152,36 @@
                                 <p class="title-s">Compétences (Intermédiaire - BTS)</p>
                                 <span>HTML</span> <span class="pull-right"></span>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="100"
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;"
+                                         aria-valuenow="100"
                                          aria-valuemin="0"
                                          aria-valuemax="100"></div>
                                 </div>
                                 <span>CSS</span> <span class="pull-right"> </span>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="100"
+                                    <div class="progress-bar" role="progressbar" style="width: 40%"
+                                         aria-valuenow="100"
                                          aria-valuemin="0"
                                          aria-valuemax="100"></div>
                                 </div>
                                 <span>PHP</span> <span class="pull-right"> </span>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="100"
+                                    <div class="progress-bar" role="progressbar" style="width: 40%"
+                                         aria-valuenow="100"
                                          aria-valuemin="0"
                                          aria-valuemax="100"></div>
                                 </div>
                                 <span>JAVASCRIPT</span> <span class="pull-right"> </span>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="100"
+                                    <div class="progress-bar" role="progressbar" style="width: 30%"
+                                         aria-valuenow="100"
                                          aria-valuemin="0"
                                          aria-valuemax="100"></div>
                                 </div>
                                 <span>PYTHON</span> <span class="pull-right"> </span>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="100"
+                                    <div class="progress-bar" role="progressbar" style="width: 55%"
+                                         aria-valuenow="100"
                                          aria-valuemin="0"
                                          aria-valuemax="100"></div>
                                 </div>
@@ -169,12 +206,14 @@
                                     (78) pour la promotion 2020-2022.
                                 </p>
                                 <p class="lead">
-                                    Je souhaite devenir développeur Full Stack pour pouvoir m'épanouir dans ce domaine
+                                    Je souhaite devenir développeur Full Stack pour pouvoir m'épanouir dans ce
+                                    domaine
                                     qu'est le développement informatique.
 
                                 </p>
 
-                                <button class="btn btn-primary" onclick="window.location.href = 'CV.pdf';">Télécharger
+                                <button class="btn btn-primary" onclick="window.location.href = 'CV.pdf';">
+                                    Télécharger
                                     mon CV
                                 </button>
                             </div>
@@ -188,7 +227,8 @@
 
 <!--/ Section Services Star /-->
 <section id="CentreInteret" class="services-mf route">
-    <div class="container" data-aos="fade-down" data-aos-delay="400" data-aos-duration="500">
+<!--    data-aos="fade-down" data-aos-delay="400" data-aos-duration="500"-->
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <div class="title-box text-center">
@@ -231,7 +271,8 @@
                             Les jeux vidéos, qui font aussi partit de mes passions, permettent de développer un bon
                             esprit d'équipe.
                             Je joue surtout aux jeux vidéos pour me surpasser et être le meilleur joueur,
-                            toujours s'améliorer de jour en jour comme pour l'informatique (Pratiquer pour progresser)
+                            toujours s'améliorer de jour en jour comme pour l'informatique (Pratiquer pour
+                            progresser)
                         </p>
                     </div>
                 </div>
@@ -342,8 +383,9 @@
                                         </div>
                                     </h2>
                                     <div class="w-more">
-                                        <div style="text-align: center;"><span class="w-ctegory">Gmail</span> / <span
-                                                class="w-date">Google Alerts</span>
+                                        <div style="text-align: center;"><span class="w-ctegory">Gmail</span> /
+                                            <span
+                                                    class="w-date">Google Alerts</span>
                                         </div>
                                     </div>
                                 </div>
@@ -362,14 +404,16 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <h2 class="w-title">
-                                        <div style="text-align: center;">Je fais un résumé de l'article choisi sur un
+                                        <div style="text-align: center;">Je fais un résumé de l'article choisi sur
+                                            un
                                             bloc note, puis je le mets
                                             au propre
                                         </div>
                                     </h2>
                                     <div class="w-more">
-                                        <div style="text-align: center;"><span class="w-ctegory">Résumé</span> / <span
-                                                class="w-date">Gitlab</span></div>
+                                        <div style="text-align: center;"><span class="w-ctegory">Résumé</span> /
+                                            <span
+                                                    class="w-date">Gitlab</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -387,11 +431,13 @@
                             <div class="row">
                                 <div class="col-sm">
                                     <h2 class="w-title">
-                                        <div style="text-align: center;">Je le stock sur gitlab et sur ma machine</div>
+                                        <div style="text-align: center;">Je le stock sur gitlab et sur ma machine
+                                        </div>
                                     </h2>
                                     <div class="w-more">
-                                        <div style="text-align: center;"><span class="w-ctegory">Stockage</span> / <span
-                                                class="w-date">Gitlab</span></div>
+                                        <div style="text-align: center;"><span class="w-ctegory">Stockage</span> /
+                                            <span
+                                                    class="w-date">Gitlab</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -433,12 +479,13 @@
                                                 <li>
                                                     <a href="https://www.francebleu.fr/emissions/le-blog-de-la-mobilite/l-urbanloop-un-systeme-de-transport-urbain-propre-et-entierement-automatise"
                                                        target="_blank"><span class="ico-circle"><i
-                                                            class="fa fa-google"></i></span></a>
+                                                                    class="fa fa-google"></i></span></a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="w-more">
-                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span> /
+                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span>
+                                                /
                                                 <span class="w-date">Google Alerts</span>
                                             </div>
                                         </div>
@@ -468,12 +515,13 @@
                                                 <li>
                                                     <a href="https://www.marianne.net/societe/big-brother/securite-faut-il-adopter-la-reconnaissance-faciale-systematique-dans-les-transports"
                                                        target="_blank"><span class="ico-circle"><i
-                                                            class="fa fa-google"></i></span></a>
+                                                                    class="fa fa-google"></i></span></a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="w-more">
-                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span> /
+                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span>
+                                                /
                                                 <span class="w-date">Google Alerts</span>
                                             </div>
                                         </div>
@@ -503,12 +551,13 @@
                                                 <li>
                                                     <a href="https://www.fredzone.org/voiture-verifie-ivre-4434"
                                                        target="_blank"><span class="ico-circle"><i
-                                                            class="fa fa-google"></i></span></a>
+                                                                    class="fa fa-google"></i></span></a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="w-more">
-                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span> /
+                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span>
+                                                /
                                                 <span class="w-date">Google Alerts</span>
                                             </div>
                                         </div>
@@ -528,7 +577,8 @@
                                 <div class="row">
                                     <div class="col-sm">
                                         <h2 class="w-title">
-                                            <div style="text-align: center;">Flottes : quand la télématique s’allie à
+                                            <div style="text-align: center;">Flottes : quand la télématique s’allie
+                                                à
                                                 l’intelligence artificielle
                                             </div>
                                         </h2>
@@ -537,12 +587,13 @@
                                                 <li>
                                                     <a href="https://strategieslogistique.com/Flottes-quand-la-telematique-s,10896"
                                                        target="_blank"><span class="ico-circle"><i
-                                                            class="fa fa-google"></i></span></a>
+                                                                    class="fa fa-google"></i></span></a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="w-more">
-                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span> /
+                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span>
+                                                /
                                                 <span class="w-date">Google Alerts</span>
                                             </div>
                                         </div>
@@ -562,7 +613,8 @@
                                 <div class="row">
                                     <div class="col-sm">
                                         <h2 class="w-title">
-                                            <div style="text-align: center;">Un transport ferroviaire léger sauvera les
+                                            <div style="text-align: center;">Un transport ferroviaire léger sauvera
+                                                les
                                                 petites lignes
                                             </div>
                                         </h2>
@@ -571,12 +623,13 @@
                                                 <li>
                                                     <a href="https://www.usinenouvelle.com/article/mobil-idees-un-transport-ferroviaire-leger-sauvera-les-petites-lignes.N1090659"
                                                        target="_blank"><span class="ico-circle"><i
-                                                            class="fa fa-google"></i></span></a>
+                                                                    class="fa fa-google"></i></span></a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="w-more">
-                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span> /
+                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span>
+                                                /
                                                 <span class="w-date">Google Alerts</span>
                                             </div>
                                         </div>
@@ -606,12 +659,13 @@
                                                 <li>
                                                     <a href="https://www.cnetfrance.fr/news/roboat-le-bateau-taxi-autonome-du-mit-fait-ses-debuts-a-amsterdam-39931521.htm"
                                                        target="_blank"><span class="ico-circle"><i
-                                                            class="fa fa-google"></i></span></a>
+                                                                    class="fa fa-google"></i></span></a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="w-more">
-                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span> /
+                                            <div style="text-align: center;"><span class="w-ctegory">Exemple</span>
+                                                /
                                                 <span class="w-date">Google Alerts</span>
                                             </div>
                                         </div>
@@ -695,10 +749,11 @@
                             </div>
                         </div>
                         <h3 class="card-title"><a href="projet1.html">
-                            <div style="text-align: center;">PROJETS BTS 1ère année</div>
-                        </a></h3>
+                                <div style="text-align: center;">PROJETS BTS 1ère année</div>
+                            </a></h3>
                         <p class="card-description">
-                        <div style="text-align: center;">Vous trouverez ici les projets que j'ai pu faire en première
+                        <div style="text-align: center;">Vous trouverez ici les projets que j'ai pu faire en
+                            première
                             année de BTS SIO.
                         </div>
                     </div>
@@ -729,10 +784,11 @@
                             </div>
                         </div>
                         <h3 class="card-title"><a href="stage.html">
-                            <div style="text-align: center;">MES STAGES</div>
-                        </a></h3>
+                                <div style="text-align: center;">MES STAGES</div>
+                            </a></h3>
                         <p class="card-description">
-                        <div style="text-align: center;">Vous trouverez ici les 2 stages que j'ai pu faire lors de mes 2
+                        <div style="text-align: center;">Vous trouverez ici les 2 stages que j'ai pu faire lors de
+                            mes 2
                             années de BTS SIO
                         </div>
                     </div>
@@ -761,10 +817,11 @@
                             </div>
                         </div>
                         <h3 class="card-title"><a href="projet2.html">
-                            <div style="text-align: center;">PROJETS BTS 2ème année</div>
-                        </a></h3>
+                                <div style="text-align: center;">PROJETS BTS 2ème année</div>
+                            </a></h3>
                         <p class="card-description">
-                        <div style="text-align: center;">Vous trouverez ici les projets que j'ai pu faire en deuxième
+                        <div style="text-align: center;">Vous trouverez ici les projets que j'ai pu faire en
+                            deuxième
                             année de BTS SIO
                         </div>
                     </div>
@@ -813,10 +870,11 @@
                             </div>
                         </div>
                         <h3 class="card-title"><a href="certifPasser.html">
-                            <div style="text-align: center;">Certifications passées</div>
-                        </a></h3>
+                                <div style="text-align: center;">Certifications passées</div>
+                            </a></h3>
                         <p class="card-description">
-                        <div style="text-align: center;">Vous trouverez ici les certifications que j'ai déjà passées.
+                        <div style="text-align: center;">Vous trouverez ici les certifications que j'ai déjà
+                            passées.
                         </div>
                     </div>
                     <div class="card-footer">
@@ -847,8 +905,8 @@
                             </div>
                         </div>
                         <h3 class="card-title"><a href="certifAPasser.html">
-                            <div style="text-align: center;">Certifications/Cours à passer</div>
-                        </a></h3>
+                                <div style="text-align: center;">Certifications/Cours à passer</div>
+                            </a></h3>
                         <p class="card-description">
                         <div style="text-align: center;">Vous trouverez ici les certifications que je compte passer.
                         </div>
@@ -900,21 +958,22 @@
                         <!--                        <li><a href="https://gitlab.com/dashboard/projects" target="_blank"><span class="ico-circle"><i-->
                         <!--                                class="fa fa-gitlab"></i></span></a></li>-->
                         <li><a href="https://github.com/DjibrilNaji" target="_blank"><span class="ico-circle"><i
-                                class="fa fa-github"></i></span></a></li>
+                                            class="fa fa-github"></i></span></a></li>
                         <li><a href="https://www.linkedin.com/in/djibril-naji-a400711aa/" target="_blank"><span
-                                class="ico-circle"><i class="fa fa-linkedin"></i></span></a></li>
+                                        class="ico-circle"><i class="fa fa-linkedin"></i></span></a></li>
                         <li>
                             <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTHVhQwkgZFqQzpkPwrlbgqvpkFtptTZgFnHJhQBwwrnJGvnrfGhhxDHHMHmqJNpsqBBbB"
-                               target="_blank"><span class="ico-circle"><i class="fa fa-envelope"></i></span></a></li>
+                               target="_blank"><span class="ico-circle"><i class="fa fa-envelope"></i></span></a>
+                        </li>
                         <!-- <li><a href="https://www.pinterest.fr/najidjibril/_saved/" target="_blank"><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li> -->
                     </ul>
                 </div>
 
                 <div>
-<!--                    <button class="btn btn-primary" onclick="window.location.href = 'avis.html';">Donner son avis-->
-<!--                    </button>-->
-<!--                    <br/>-->
-<!--                    <br/>-->
+                    <!--                    <button class="btn btn-primary" onclick="window.location.href = 'avis.html';">Donner son avis-->
+                    <!--                    </button>-->
+                    <!--                    <br/>-->
+                    <!--                    <br/>-->
                     <button class="btn btn-light" onclick="window.location.href = 'mentionsLegales.html';">Mentions
                         légales
                     </button>
